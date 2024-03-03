@@ -4,6 +4,8 @@
  */
 package employee;
 
+import java.util.Scanner;
+
 /*
     Programmer: Liudmila Grati 
     CA2: Programming - Object Oriented Approach
@@ -38,5 +40,13 @@ public class Manager extends Employee {
     public void setPassword(String password) {
         this.password = password;
     }
+    
+    
+    /* Create a Netbean-console menu system for the manager to log in 
+       and view current staff and add new staff. (username – “Gnomeo”; Password – “smurf”)
+    */ 
+    
+    // Method to log in and view current staff and add new staff
 
-}
+    }
+
