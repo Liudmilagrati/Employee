@@ -17,13 +17,16 @@ package employee;
     // Main Method 
     public static void main(String[] args) {
       
-    //declares an array, called projectGroup, to store these 3 Employee objects and loads the array with the objects.
+    //declare an array, called projectGroup, to store these 3 Employee objects and loads the array with the objects.
     Employee[] projectGroup = new Employee[3];
         
     // Create 3 Employee objects with details specified in the CA 
     projectGroup[0] = new Employee("Joe Bloggs", "jb@gmail.com");
     projectGroup[1] = new Employee("Ann Banana", "ab@gmail.com");
     projectGroup[2] = new Employee("Tom Thumb", "tt@gmail.com");
+    
+    //Print out the value of variable nextEmpNum to the terminal window
+    System.out.println("The value of the Next Employee Number is: " + Employee.getNextEmpNum());
         
         
         
