@@ -68,6 +68,15 @@ public class Employee {
         return empNum;
     }
     
+    // Method to set email. Using if statement to check condition that email cannot be less then 3 characters. 
+    public void setEmail(String email) {
+        if (email.length() > 3) {
+            this.email = email;
+        } else {
+            System.out.println("Invalid input. The email address must be longer than 3 characters. Please try again!");
+        }
+    }
+    
     
     
         
