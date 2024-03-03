@@ -29,6 +29,27 @@ public class Employee {
     
     // Static field
     private static int nextEmpNum = 1;
+    
+    /*Two Constructors: 
+	- One constructor initialises the name and email instance fields with default values. 
+	- The other constructor initialises these fields with values passed as parameters.
+    */
+    
+    //1st constrcutot that initialises the name and email instance fiorleds witf defauls values
+    public Employee() {
+        this.name = "Default Name";
+        this.email = "default@example.ie";
+        this.empNum = nextEmpNum++;
+    }
+    
+    //2nd constrcuctor that initialises these fields with values passed as parameters
+    public Employee(String name, String email) {
+        this.name = name;
+        this.email = email;
+        this.empNum = nextEmpNum++;
+    }
+    
+
 
  
     }
