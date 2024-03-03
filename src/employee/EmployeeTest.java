@@ -27,6 +27,16 @@ package employee;
     
     //Print out the value of variable nextEmpNum to the terminal window
     System.out.println("The value of the Next Employee Number is: " + Employee.getNextEmpNum());
+    
+    /* Write the code to search and display the name of each of the employees in the projectGroup array, 
+    who have an employee number above the value stored in a variable called m.
+    */
+    int m = 1; // Example value for variable 'm'
+        for (Employee employee : projectGroup) {
+            if (employee.getEmpNum() > m) {
+                System.out.println("Employee Name: " + employee.getName());
+            }
+        }
         
         
         
