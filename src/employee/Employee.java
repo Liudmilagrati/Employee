@@ -77,6 +77,11 @@ public class Employee {
         }
     }
     
+    // Method to get nextEmpNum current value 
+    public static int getNextEmpNum() {
+        return nextEmpNum;
+    }
+    
     
     
         
