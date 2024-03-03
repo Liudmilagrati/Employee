@@ -20,4 +20,16 @@ public class Company {
     //Create an ArrayList, called staff, to hold a list of employee objects, whose class is described in Question 1 above.
     private ArrayList<Employee> staff;
     
+    //Write the default constructor for this class which initialises all fields.
+     public Company() {
+        this.companyName = "Default Company";
+        this.staff = new ArrayList<>();
+    }
+     
+     //Write an overloaded constructor which accepts a name value as a parameter.
+     public Company(String companyName) {
+        this.companyName = companyName;
+        this.staff = new ArrayList<>();
+    }
+    
 }
