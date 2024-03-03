@@ -19,11 +19,11 @@ public class Company {
     private String companyName;
     
     //Create an ArrayList, called staff, to hold a list of employee objects, whose class is described in Question 1 above.
-    private ArrayList<Employee> staff;
+    private static ArrayList<Employee> staff;
     
     //Write the default constructor for this class which initialises all fields.
      public Company() {
-        this.companyName = "Default Company";
+        this.companyName = "Gnomes LTD Company";
         this.staff = new ArrayList<>();
     }
      
@@ -36,7 +36,7 @@ public class Company {
      //Complete the implementation by writing the code for the following methods only: 
 
     //1. addNewStaff() adds a new employee to the staff arrayList (the employee is a parameter). 
-     public void addNewStaff(Employee employee) {
+     public static void addNewStaff(Employee employee) {
         staff.add(employee);
     }
      
@@ -54,9 +54,46 @@ public class Company {
             if (employee.getEmpNum() > value) {
                 System.out.println("Employee Name: " + employee.getName());
             }
-        }   
-        
-           System.out.println("test ");
-}
+        }           
+    }
+       //Merhod to display all the employees details 
+       public static void displayEmployeeDetails() {
+        System.out.println("Employee details for " + "Gnomes LTD" + ":");
+        for (Employee employee : staff) {
+            displayEmployeeDetails(employee);
+        }
+    }
+
+    public static void displayEmployeeDetails(Employee employee) {
+        System.out.println("Employee Name: " + employee.getName());
+        System.out.println("Employee Email: " + employee.getEmail());
+        System.out.println("Employee EmpNum: " + employee.getEmpNum());
+        System.out.println();
+    }
+    
+    // Remove an employee based on empNum
+    public static void removeStaff(int empNum) {
+        Iterator<Employee> iterator = staff.iterator();
+        while (iterator.hasNext()) {
+            Employee employee = iterator.next();
+            if (employee.getEmpNum() == empNum) {
+                iterator.remove();
+                System.out.println("Employee with empNum " + empNum + " removed successfully.");
+                return;
+            }
+        }
+        System.out.println("Employee with empNum " + empNum + " not found.");
+    } 
+    
+        //Bonus challenge:
+        //Create a HashSet called staffSet that will not allow two employees with the same empNum to be elements
+        // HashSet<Employee> staffSet = new HashSet<>();
+        //  public void addNewStaff(Employee employee) {
+        //     if (staffSet.add(employee)) {
+        //        staff.add(employee);
+        //   } else {
+        //       System.out.println("Employee with empNum " + employee.getEmpNum() + " already exists.");
+        //   }
+        //  }
 
 }

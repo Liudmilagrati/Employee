@@ -39,7 +39,12 @@ package employee;
             }
         } 
         
-        Manager.start();
+        Manager_Console_Menu.getWelcomeMenu();
+        
+        Manager_Console_Menu.login();
+      
+        
+        
         
 
     }  
