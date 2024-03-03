@@ -14,6 +14,11 @@ package employee;
     which creates 3 Employee objects. 
     */
     
+    /* *******************************************************
+        GitHub link: https://github.com/Liudmilagrati/Employee/tree/main/src/employee
+    **********************************************************
+    */
+    
     // Main Method 
     public static void main(String[] args) {
       
