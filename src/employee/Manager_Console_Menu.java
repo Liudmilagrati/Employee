@@ -12,8 +12,8 @@ import java.util.Scanner;
   
 public class Manager_Console_Menu {
     
-    private static final String MANAGER_USERNAME = "Gnomeo";
-    private static final String MANAGER_PASSWORD = "smurf";
+    private static final String Manager_Username = "Gnomeo";
+    private static final String Manager_Password = "smurf";
     
      /**
      * Outputs the welcome menu for the manager to the terminal 
