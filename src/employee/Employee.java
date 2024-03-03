@@ -21,7 +21,16 @@ public class Employee {
     private String name;
     private String email;
     private int empNum;
-  
+    
+    /* Static field: nextEmpNum, of type int and initialized to 1, which initialises 
+    empNum in the constructor.  Its value must then be incremented to give consecutive 
+    numbers to each newly created object. 
+    */
+    
+    // Static field
+    private static int nextEmpNum = 1;
+
+ 
     }
     
 
