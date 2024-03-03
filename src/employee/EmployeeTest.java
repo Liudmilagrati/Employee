@@ -36,18 +36,9 @@ package employee;
             if (employee.getEmpNum() > m) {
                 System.out.println("Employee Name: " + employee.getName());
             }
-        }
-        
-        
-        
-        
-        
-        
-        
-        
-        
+        }          
     }
-    }
+}
 
 
 
