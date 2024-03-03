@@ -5,8 +5,7 @@
 package employee;
 
 /** Programmer: Liudmila Grati 
- * CA2: 
- * 
+ *  CA2: Programming - Object Oriented Approach
  */
 public class Employee {
 
@@ -68,7 +67,7 @@ public class Employee {
         return empNum;
     }
     
-    // Method to set email. Using if statement to check condition that email cannot be less then 3 characters. 
+    // Setter method to set email. Using if statement to check condition that email cannot be less then 3 characters. 
     public void setEmail(String email) {
         if (email.length() > 3) {
             this.email = email;
@@ -80,14 +79,8 @@ public class Employee {
     // Method to get nextEmpNum current value 
     public static int getNextEmpNum() {
         return nextEmpNum;
-    }
-    
-    
-    
-        
-        
-
-    }
+    }   
+}
 
     
 
