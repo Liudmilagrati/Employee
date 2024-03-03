@@ -5,6 +5,7 @@
 package employee;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 /*
     Programmer: Liudmila Grati 
@@ -31,5 +32,31 @@ public class Company {
         this.companyName = companyName;
         this.staff = new ArrayList<>();
     }
+     
+     //Complete the implementation by writing the code for the following methods only: 
+
+    //1. addNewStaff() adds a new employee to the staff arrayList (the employee is a parameter). 
+     public void addNewStaff(Employee employee) {
+        staff.add(employee);
+    }
+     
+    //2. getStaffNumber() returns the number of employees currently in the arrayList.
+     public int getStaffNumber() {
+        return staff.size();
+    }
+     
+     //3. listEmployees() uses an iterator object to find in the arrayList all employees above a given employee number value
+     //   (this value is a parameter for this method) and prints the names of these employees. 
+       public void listEmployees(int value) {
+        Iterator<Employee> iterator = staff.iterator();
+        while (iterator.hasNext()) {
+            Employee employee = iterator.next();
+            if (employee.getEmpNum() > value) {
+                System.out.println("Employee Name: " + employee.getName());
+            }
+        }
+     
+
     
+}
 }
