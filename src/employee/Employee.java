@@ -4,6 +4,9 @@
  */
 package employee;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 /** Programmer: Liudmila Grati 
  *  CA2: Programming - Object Oriented Approach
  */
@@ -67,13 +70,27 @@ public class Employee {
         return empNum;
     }
     
-    // Setter method to set email. Using if statement to check condition that email cannot be less then 3 characters. 
+    // Setter method to set email. Using if statement to check condition that email cannot be less then 3 characters.
+    // And checking that email is a valid email address 
     public void setEmail(String email) {
-        if (email.length() > 3) {
+        if (email.length() > 3 && isValidEmail(email)) {
             this.email = email;
         } else {
-            System.out.println("Invalid input. The email address must be longer than 3 characters. Please try again!");
+            System.out.println("Invalid input. The email address must be longer than 3 characters and in the correct format. Please try again!");
         }
+    }
+    
+
+    //Challenge: Implement a check for a valid email address
+    // Method to validate email format
+    private boolean isValidEmail(String email) {
+        
+        // Regular expression for basic email validation
+        String emailRegex = "^[a-zA-Z0-9_+&*-]+(?:\\.[a-zA-Z0-9_+&*-]+)*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,7}$";
+
+        Pattern pattern = Pattern.compile(emailRegex);
+        Matcher matcher = pattern.matcher(email);
+        return matcher.matches();
     }
     
     // Method to get nextEmpNum current value 
