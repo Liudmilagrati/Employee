@@ -32,8 +32,7 @@ package employee;
     
     //Print out the value of variable nextEmpNum to the terminal window
     System.out.println("The value of the Next Employee Number is: " + Employee.getNextEmpNum());
-    
-    
+     
     /* Write the code to search and display the name of each of the employees in the projectGroup array, 
     who have an employee number above the value stored in a variable called m.
     */
@@ -44,14 +43,9 @@ package employee;
             }
         } 
         
-        Manager_Console_Menu.getWelcomeMenu();
-        
+        //Code Run the Manager Consiole Menu 
+        Manager_Console_Menu.getWelcomeMenu();       
         Manager_Console_Menu.login();
-      
-        
-        
-        
-
     }  
 }
 

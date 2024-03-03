@@ -6,6 +6,11 @@ package employee;
 
 import java.util.Scanner;
 
+    /*
+    Programmer: Liudmila Grati 
+    CA2: Programming - Object Oriented Approach
+    */
+
     /* Create a Netbean-console menu system for the manager to log in 
        and view current staff and add new staff. (username – “Gnomeo”; Password – “smurf”)
     */ 
@@ -15,16 +20,16 @@ public class Manager_Console_Menu {
     private static final String Manager_Username = "Gnomeo";
     private static final String Manager_Password = "smurf";
     
-     /**
-     * Outputs the welcome menu for the manager to the terminal 
-     */
+   
+    // Outputs the welcome menu for the manager to the terminal 
+ 
     public static void getWelcomeMenu() {
         System.out.println("");
         System.out.println(" ******* WELCOME TO GNOMES LTD*************");
         System.out.println("");
-        System.out.println("          Employee Management System");
+        System.out.println("      Employee Management System");
         System.out.println("");
-        System.out.println("         Please login to if you wish to continue");
+        System.out.println("  Please login to if you wish to continue");
         System.out.println("-------------------------------------------");
     }
     
@@ -69,10 +74,7 @@ public class Manager_Console_Menu {
         }
         else {
             System.out.println("Wrong username or password. Try again!");
+            }
         }
-    }
-}
-    
-  
-    
+    }    
 }

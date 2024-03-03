@@ -80,7 +80,6 @@ public class Employee {
         }
     }
     
-
     //Challenge: Implement a check for a valid email address
     // Method to validate email format
     private boolean isValidEmail(String email) {
@@ -96,8 +95,7 @@ public class Employee {
     // Method to get nextEmpNum current value 
     public static int getNextEmpNum() {
         return nextEmpNum;
-    }   
-    
+    }      
 }
 
     
