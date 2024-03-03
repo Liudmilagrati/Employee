@@ -35,7 +35,7 @@ public class Employee {
 	- The other constructor initialises these fields with values passed as parameters.
     */
     
-    //1st constrcutot that initialises the name and email instance fiorleds witf defauls values
+    //1st constructor that initialises the name and email instance fields with defaults values
     public Employee() {
         this.name = "Default Name";
         this.email = "default@example.ie";
@@ -48,10 +48,37 @@ public class Employee {
         this.email = email;
         this.empNum = nextEmpNum++;
     }
+        
+    /* Methods:
+    -Accessor methods to return name, email and empNum values.
+    -setEmail(String email) – to set the email field to a new value passed as a parameter.  The value must not be accepted if its length is 3 or less.
+    -getNextEmpNum() - to return the current value of nextEmpNum.
+    */
+    
+    // Method to return name values
+    public String getName() {
+        return name;
+    }
+    // Method to return email values
+    public String getEmail() {
+        return email;
+    }
+    // Method to return empNum values 
+    public int getEmpNum() {
+        return empNum;
+    }
+    
+    
+    
+        
+        
+
+    }
+
     
 
 
  
-    }
+    
     
 
